@@ -11,7 +11,7 @@ struct Check{
     int CheckNum;
     string Checkmemo;
     int CheckAmount;
-    /* bool operator >(const Check& bal){
+    bool operator >(const Check& bal){
          if(CheckAmount > bal){
              cout<<"This amount is greater"<<endl;
              return true;
@@ -19,7 +19,7 @@ struct Check{
          return false;
          cout<<"This amount is lesser"<<endl;
      };
- */
+
     ostream& operator << (const Check& CheckAmount);
 
 };
